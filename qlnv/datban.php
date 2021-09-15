@@ -5,7 +5,7 @@
 	<title>Thông tin Đặt bàn</title>
     <style>
         body{
-            background: url("../images/dvd1.jpg")
+            background: url("../images/vp.jpg")
             no-repeat center center fixed;
             background-size: cover;
         }
@@ -126,7 +126,7 @@ padding:70px;
   font-family: 'Lobster';
   text-align: center;
   font-size:50px;
-  color:rgb(212, 221, 188);
+  color:rgb(87 100 51);
 }
 .boder{
   width: 300px;
@@ -249,23 +249,24 @@ padding:70px;
     </div>
     <div id="set-table">
         <div class="table">
-          <h2 class="text-center">Đặt bàn</h2>
+          <h2 class="text-center">Thêm Khách hàng , đối tác</h2>
           <form action="addTable.php" method="POST" class="table-form" id="sub-table">
              <input type="text" placeholder="Họ và tên" name="fname" class="boder"  id="sub-table" required>
              <input type="text" placeholder="Email" name="femail" class="boder"  id="sub-table" required>
              <input type="text" placeholder="Số điện thoại" name="fphone" class="boder"  id="sub-table" required>
-             <select  class="boders" name="ftable" required  id="sub-table">
-              <option value="Chọn loại bàn" required>Chọn loại bàn</option>
-              <option value="2 chỗ">2 chỗ</option>
-              <option value="4 chỗ">4 chỗ</option>
-              <option value="6 chỗ">6 chỗ</option>
-              <option value="8 chỗ">8 chỗ</option>
-              <option value="12 chỗ">12 chỗ</option>
-              <option value="16 chỗ">16 chỗ</option>
+             <select  class="boders" name="fproject" required  id="sub-table">
+              <option value="Chọn loại bàn" required>Danh sách dự án</option>
+              <option value="dự án phần mềm">dự án phần mềm</option>
+              <option value="dự án mạng XH">dự án mạng XH</option>
+              <option value="dự án game ">dự án game </option>
+              <option value="dự án đồ họa">dự án đồ họa</option>
+              <option value="dự án film">dự án film</option>
+              <option value="dự án nghệ thuật">dự án nghệ thuật</option>
+              <option value="dự án bảo mật">dự án bảo mật</option>
              </select>
-             <input type="date" name="fdate" class="boder"  id="sub-table" required>
+             <input type="text" placeholder="đối tác KD" name="fpartners" class="boder"  id="sub-table" required>
              <input type="time" name="ftime" class="boder"  id="sub-table" required>
-             <center><button type="submit" class="click" id="settable" onclick="confirm('Click OK!');" href="">Đặt bàn</button></center>            
+             <center><button type="submit" class="click" id="settable" onclick="confirm('Click OK!');" href="">Hợp tác</button></center>            
             
           </form>
           

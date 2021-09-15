@@ -14,10 +14,15 @@ if (isset($_POST['dangnhap']))
   $username = $_POST['username'];
   $password = $_POST['password'];
   
+  if ($username == "nhanvien" && $password == "1234")  {
+    header('location:header1.php');
+exit();
+}
   if (!$username || !$password) {
     echo "Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu.";
 exit();
 }
+
 if ($username == "dat" && $password == "123") {
     header('location:header.php');
 }

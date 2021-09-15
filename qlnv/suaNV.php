@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <title>Edit</title>
+    <style tyle="text/css">
+body{
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/vp.jpg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+ 
+  background-size: cover;
+}
+</style>
 </head>
 
 

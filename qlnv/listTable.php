@@ -31,7 +31,7 @@ include 'header.php';
 
     ?>
     <center>
-        <h1>DANH SÁCH KHÁCH HÀNG ĐẶT BÀN</h1><br>
+        <h1>DANH SÁCH KHÁCH HÀNG </h1><br>
 
         <form action="" method="POST">
            <input type="text" placeholder="Search" name="search" style="width: 300px;height:30px;background:rgb(255, 236, 233);border:1px solid black;border-radius:8px">&nbsp;
@@ -43,7 +43,8 @@ include 'header.php';
                 <td><b>Họ và tên</b</td>
                 <td><b>Email</b></td>
                 <td><b>Số điện thoại</b></td>
-                <td><b>Ngày</b></td>
+                <td><b>Dự án </b></td>
+                <td><b>Đối tác công ty</b></td>
                 <td><b>Giờ</b></td>
                 <td colspan="3" align="center"><b>Chức năng</b><br>
                 <button style="border-radius:5px"><a href='datban.php?fphone=$phone'>Thêm</a></button></td>
@@ -72,8 +73,8 @@ include 'header.php';
                   echo "<td>".$r['fname']."</td>";
                   echo "<td>".$r['femail']."</td>";
                   echo "<td>".$r['fphone']."</td>";
-                  echo "<td>".$r['ftable']."</td>";
-                  echo "<td>".$r['fdate']."</td>";
+                  echo "<td>".$r['fproject']."</td>";
+                  echo "<td>".$r['fpartners']."</td>";
                   echo "<td>".$r['ftime']."</td>";
                   echo "<td align=center><button style=border-radius:5px><a href='delTable.php?fphone=$phone'>Xóa</a></button></td>";
                   echo "<td align=center><button style=border-radius:5px><a href='editTable.php?fphone=$phone'>Sửa</a></button></td>";

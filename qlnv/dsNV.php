@@ -19,6 +19,11 @@
     width: 50px;
     height: 30px;
   }
+  .xuatfile{
+    width:150px;
+    height: 40px;
+    border-radius:5px;
+  }
   a{
     text-decoration: none;
   }
@@ -35,8 +40,7 @@
       <button style="width: 100px;height:30px;border:1px solid black;border-radius:8px">Search</button><br><br>
     </form>
     <table class= "table-bordered" width="70%">           
-      <header></header>
-      <tr>
+      <header>
         <th scope="col">STT</th>              
         <th scope="col">Họ và tên</th>
         <th scope="col">Số điện thoại</th>
@@ -75,10 +79,10 @@
           }
         }
       }
-
+     
       ?>
     </table><br><br>
-    
+    <button class="xuatfile"><a href='xuatfilejson.php?fphone=$phone'>Xuất json nhân viên</a></button></center></th>
   </center>
 </body>
 </html>

@@ -43,13 +43,12 @@ body{
             <div id="content-wrapper">
                 <div class="container">
                     <div class="left-menu">
-                        <div class="menu-heading">Admin DAT</div>
+                        <div class="menu-heading">Nhân Viên</div>
                         <div class="menu-items">
                             <ul >
                                 <li><a href="listTable.php" >Quản lý khách hàng</a></li>
-                                <li><a href="dsNV.php">Quản lý nhân viên</a></li>
                                 <li><a href="">Các doanh nghiệp</a></li>
-                                <li><a href="">Doanh thu</a></li>   
+                                <li><a href="">Doanh thu cá nhân</a></li>   
                                 </div>
                                </li> 
                             </ul>

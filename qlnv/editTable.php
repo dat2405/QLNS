@@ -71,8 +71,8 @@ button:hover{
                         $name=$r['fname'];
                         $email=$r['femail'];
                         $phone=$r['fphone'];
-                        $table=$r['ftable'];
-                        $date=$r['fdate'];
+                        $table=$r['fproject'];
+                        $date=$r['fpartners'];
                         $time=$r['ftime'];
                        
 					}
@@ -89,16 +89,17 @@ button:hover{
              <input type="text" placeholder="Họ và tên" name="fname" class="boder"  id="sub-table"  value="<?php echo $name;?>">
              <input type="text" placeholder="Email" name="femail" class="boder"  id="sub-table"  value="<?php echo $email;?>">
              <input type="text" placeholder="Số điện thoại" name="fphone" class="boder"  id="sub-table"  value="<?php echo $phone;?>">
-             <select  class="boders" name="ftable"   id="sub-table" value="<?php echo $table;?>">
-              <option value="Chọn loại bàn"  >Chọn loại bàn</option>
-              <option value="2 chỗ" <?php if($table=='2 chỗ'){echo 'selected="selected"';}?>>2 chỗ</option>
-              <option value="4 chỗ" <?php if($table=='4 chỗ'){echo 'selected="selected"';}?>>4 chỗ</option>
-              <option value="6 chỗ" <?php if($table=='6 chỗ'){echo 'selected="selected"';}?>>6 chỗ</option>
-              <option value="8 chỗ" <?php if($table=='8 chỗ'){echo 'selected="selected"';}?>>8 chỗ</option>
-              <option value="12 chỗ" <?php if($table=='12 chỗ'){echo 'selected="selected"';}?>>12 chỗ</option>
-              <option value="16 chỗ" <?php if($table=='16 chỗ'){echo 'selected="selected"';}?>>16 chỗ</option>
+             <select  class="boders" name="fproject"   id="sub-table" value="<?php echo $project;?>">
+              <option value="Chọn loại bàn"  >Các dự án</option>
+              <option value="Phần mềm" <?php if($project=='Phần mềm'){echo 'selected="selected"';}?>>Phần mềm</option>
+              <option value="Mạng" <?php if($project=='Mạng'){echo 'selected="selected"';}?>>Mạng</option>
+              <option value="game" <?php if($project=='game'){echo 'selected="selected"';}?>>game</option>
+              <option value="Đồ họa" <?php if($project=='Đồ họa'){echo 'selected="selected"';}?>>Đồ họa</option>
+              <option value="film" <?php if($project=='film'){echo 'selected="selected"';}?>>film</option>
+              <option value="Nghệ thuật" <?php if($project=='Nghệ thuật'){echo 'selected="selected"';}?>>Nghệ thuật</option>
+              <option value="Bảo mật" <?php if($project=='Bảo mật'){echo 'selected="selected"';}?>>Bảo mật</option>
              </select>
-             <input type="date" name="fdate" class="boder"  id="sub-table"  value="<?php echo $date;?>">
+             <input type="text" placeholder="Đối tác" name="fpartners" class="boder"  id="sub-table"  value="<?php echo $partners;?>">
              <input type="time" name="ftime" class="boder"  id="sub-table"  value="<?php echo $time;?>">
              <center><button type="submit" class="click" id="settable" onclick="alert('Bạn chắc chứ?')">Đặt bàn</button></center>            
           

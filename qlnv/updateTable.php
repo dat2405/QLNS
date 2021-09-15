@@ -18,13 +18,13 @@
 				$name=$_POST['fname'];
                 $email=$_POST['femail'];
                 $phone=$_POST['fphone'];
-                $table=$_POST['ftable'];
-                $date=$_POST['fdate'];
+                $table=$_POST['fproject'];
+                $date=$_POST['fpartners'];
                 $time=$_POST['ftime'];
         
         
 
-				$sql_update="update t_khachhang set fname='".$name."',femail='".$email."',fphone='".$phone."',ftable='".$table."',fdate='".$date."',ftime='".$time."'where fphone='".$phone."'";
+				$sql_update="update t_khachhang set fname='".$name."',femail='".$email."',fphone='".$phone."',fproject='".$project."',fpartners='".$partners."',ftime='".$time."'where fphone='".$phone."'";
 				mysqli_query($db,$sql_update);
 				header('location:listTable.php');
             }
